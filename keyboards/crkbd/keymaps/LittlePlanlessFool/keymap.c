@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 
 
-#define GAMETGL /*XXXXXXX*/ /* or */ TO(3)
+#define GAMETGL XXXXXXX /* or */ /*TO(3)*/
 
 // Left-hand home row mods
 #define HOME_A LGUI_T(KC_A)
