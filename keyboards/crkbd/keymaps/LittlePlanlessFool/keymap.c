@@ -35,7 +35,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 
-
 const uint32_t PROGMEM unicode_map[] = {
     0x00E4, // ä
     0x00C4, // Ä
@@ -44,6 +43,10 @@ const uint32_t PROGMEM unicode_map[] = {
     0x00F6, // ö
     0x00D6, // Ö
     0x00DF, // ß
+    0x0300, // d`
+    0x0303, // d~
+    0x0301, // d´
+    0x0327, // d¸
 };
 
 
@@ -65,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Symbols
     [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      _______,    KC_6,    KC_7,    KC_8,    KC_9,  KC_GRV,                      XXXXXXX,    KC_2,    KC_3,    KC_4,    KC_5, KC_BSPC,
+      _______,    KC_6,    KC_7,    KC_8,    KC_9, UP(7,8),                     UP(9,10),    KC_2,    KC_3,    KC_4,    KC_5, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, KC_SCLN, KC_SLSH, KC_LBRC,    KC_0, KC_MINS,                       KC_EQL,    KC_1, KC_RBRC, KC_BSLS, KC_QUOT, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
